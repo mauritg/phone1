@@ -1,0 +1,24 @@
+<html>
+<head>
+<meta>  </meta>
+<title>  </title>
+<script type= "text/javascript" src="phonegap.js" />
+<script>
+document.getElementByld("deviceready",function(){
+document.getElementByld("boton").addEventListener("click",funtion(){
+navigator.contacts.find([*],function(contactos){
+for(var i=0; i<contactos.length; i++){
+var contacto=contactos[i];
+alert(contacto.displayName);
+}
+},function(){
+alert("Error al leer contactos;
+});
+},false);
+},false);
+</script>
+</head>
+<body>
+<input type="button" value="Leer contactos" id="boton">
+</body>
+</html>
